@@ -1,15 +1,6 @@
-# Luke's build of dwm
+# KRIMOD's build of dwm
 
-## FAQ
-
-> What are the bindings?
-
-This is suckless, mmmbud, the source code is the documentation! Check out [config.h](config.h).
-
-Okay, okay, actually I keep a readme in `larbs.mom` for my whole system, including the binds here.
-Press `super+F1` to view it in dwm (zathura is required for that binding).
-I haven't kept `man dwm`/`dwm.1` updated though. PRs welcome on that, lol.
-
+A fork from LukeSmith/dwm with a very few adjustemnt for my liking
 ## Patches and features
 
 - Clickable statusbar with my build of [dwmblocks](https://github.com/lukesmithxyz/dwmblocks).
@@ -22,6 +13,11 @@ I haven't kept `man dwm`/`dwm.1` updated though. PRs welcome on that, lol.
 - shiftview: Cycle through tags (`super+g/;`).
 - vanitygaps: Gaps allowed across all layouts.
 - swallow patch: if a program run from a terminal would make it inoperable, it temporarily takes its place to save space.
+
+Things I modified
+- changed some shortcuts to azerty keyboard layout
+- cleanup some unused shortcuts (not sufficient)
+- switched to amixer because I don't know how to setup pulse audio on artix
 
 ## Installation for newbs
 
