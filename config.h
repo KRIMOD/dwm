@@ -128,7 +128,6 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
-	{ MODKEY,								XK_grave,	spawn,	SHCMD("dmenuunicode") },
 	TAGKEYS(                XK_ampersand,                     0)
 	TAGKEYS(                XK_eacute,                        1)
 	TAGKEYS(                XK_quotedbl,                      2)
@@ -138,6 +137,7 @@ static Key keys[] = {
 	TAGKEYS(                XK_egrave,                        6)
 	TAGKEYS(                XK_underscore,                    7)
 	TAGKEYS(                XK_ccedilla,                      8)
+	{ MODKEY,								XK_twosuperior,	spawn,	SHCMD("dmenuunicode") },
 	{ MODKEY,               XK_agrave,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,     XK_agrave,      tag,            {.ui = ~0 } },
 	{ MODKEY,								XK_BackSpace,	spawn,		SHCMD("sysact") },
@@ -146,7 +146,7 @@ static Key keys[] = {
 	{ MODKEY,								XK_Tab,		view,		{0} },
 	{ MODKEY,			XK_q,			killclient,	{0} },
 	{ MODKEY|ShiftMask,		XK_q,		spawn,					SHCMD("killall dwm") },
-	{ MODKEY|ShiftMask,		XK_l,		spawn,					SHCMD("slock") },
+	{ MODKEY|ShiftMask,		XK_l,		spawn,					SHCMD("sysact") },
 	{ MODKEY,							XK_w,		spawn,					SHCMD("$BROWSER") },
 	{ MODKEY|ShiftMask,		XK_w,		spawn,					SHCMD(TERMINAL " -e sudo nmtui") },
 	{ MODKEY,							XK_r,		spawn,					SHCMD(TERMINAL " -e lf") },
