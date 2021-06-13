@@ -145,8 +145,8 @@ static Key keys[] = {
 
 	{ MODKEY,								XK_Tab,		view,		{0} },
 	{ MODKEY,			XK_q,			killclient,	{0} },
-	{ MODKEY|ShiftMask,		XK_q,		spawn,					SHCMD("killall dwm") },
-	{ MODKEY|ShiftMask,		XK_l,		spawn,					SHCMD("sysact") },
+	{ MODKEY|ShiftMask,		XK_q,		spawn,					SHCMD("sysact") },
+	{ MODKEY|ShiftMask,		XK_l,		spawn,					SHCMD("slock") },
 	{ MODKEY,							XK_w,		spawn,					SHCMD("$BROWSER") },
 	{ MODKEY|ShiftMask,		XK_w,		spawn,					SHCMD(TERMINAL " -e sudo nmtui") },
 	{ MODKEY,							XK_r,		spawn,					SHCMD(TERMINAL " -e lf") },
